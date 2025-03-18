@@ -1,0 +1,57 @@
+{
+  "name": "alioss-mcp",
+  "version": "0.1.1-beta",
+  "description": "为AI编码工具提供阿里云OSS访问能力的Model Context Protocol服务器",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsc && npx @modelcontextprotocol/inspector",
+    "start": "tsc && node dist/index.js",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "alioss-mcp": "dist/index.js"
+  },
+  "keywords": [
+    "aliyun",
+    "oss",
+    "alioss",
+    "mcp",
+    "model-context-protocol",
+    "cursor",
+    "ai",
+    "storage"
+  ],
+  "author": "chenhongguang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uncle-light/alioss-mcp.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/ali-oss": "^6.16.11",
+    "@types/express": "^5.0.0",
+    "@types/mime": "3.0.4",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.26.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@types/mime-types": "^2.1.4",
+    "@types/minimist": "^1.2.5",
+    "ali-oss": "^6.22.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mime": "3",
+    "minimist": "^1.2.8",
+    "zod": "^3.24.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
